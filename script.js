@@ -85,7 +85,7 @@ function initializeDownloadButton() {
         
         // Add a loading state
         const originalText = downloadBtn.innerHTML;
-        downloadBtn.innerHTML = '<span class="download-icon">⏳</span> Preparing Download...';
+        downloadBtn.innerHTML = '<span class="download-icon">⏳</span> Preparing Purchase...';
         downloadBtn.style.pointerEvents = 'none';
         
         // Simulate download preparation (replace with actual download logic)
@@ -94,23 +94,23 @@ function initializeDownloadButton() {
             downloadBtn.innerHTML = originalText;
             downloadBtn.style.pointerEvents = 'auto';
             
-            // Show download message
-            showDownloadMessage();
+            // Show purchase message
+            showPurchaseMessage();
         }, 2000);
     });
 }
 
-// Show download message
-function showDownloadMessage() {
+// Show purchase message
+function showPurchaseMessage() {
     // Create notification
     const notification = document.createElement('div');
-    notification.className = 'download-notification';
+    notification.className = 'purchase-notification';
     notification.innerHTML = `
         <div class="notification-content">
-            <span class="notification-icon">📦</span>
+            <span class="notification-icon">🛍️</span>
             <div class="notification-text">
                 <strong>Coming Soon!</strong>
-                <p>Disguise My App is currently in development. Star the GitHub repo to get notified when it's ready!</p>
+                <p>Disguise My App will be available for $5 as a one-time purchase. Get notified when it launches!</p>
             </div>
             <button class="notification-close">&times;</button>
         </div>
@@ -119,7 +119,7 @@ function showDownloadMessage() {
     // Add notification styles
     const style = document.createElement('style');
     style.textContent = `
-        .download-notification {
+        .purchase-notification {
             position: fixed;
             top: 100px;
             right: 20px;

@@ -1,6 +1,6 @@
 # Disguise My App - Landing Page
 
-A modern, responsive landing page for **Disguise My App**, a macOS application that helps users disguise personal apps behind harmless-looking icons for privacy during screen sharing and public work.
+A professional, responsive landing page for **Disguise My App**, a premium macOS application that helps users disguise personal apps behind professional-looking icons for privacy during screen sharing and public work.
 
 ## 🌟 About Disguise My App
 
@@ -17,6 +17,7 @@ Disguise My App gives macOS users a one-click way to disguise personal apps behi
 - ✅ Instant changes visible in Dock and Finder
 - ✅ Easy restoration of original icons
 - ✅ Secure and private (no data collection)
+- ✅ One-time purchase ($5) - no subscriptions
 - ✅ System integration with macOS 13+
 
 ## 🚀 Landing Page Features
@@ -133,7 +134,7 @@ The landing page is fully responsive with breakpoints at:
 
 ## 📄 License
 
-This landing page template is open source. Feel free to use it for your own projects.
+This landing page is part of the Disguise My App project. The landing page template portions are open source.
 
 ## 🤝 Contributing
 
@@ -145,4 +146,4 @@ For questions about the landing page or the Disguise My App application, please 
 
 ---
 
-**Note**: This is the landing page repository. For the actual Disguise My App application source code, visit the main application repository.
+**Note**: This is the landing page repository for the premium Disguise My App macOS application. The app is available as a one-time $5 purchase.
