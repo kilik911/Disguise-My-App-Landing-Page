@@ -484,6 +484,25 @@ body {
 
 .download-buttons {
     margin-bottom: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.pricing-info {
+    display: flex;
+    justify-content: center;
+}
+
+.price-text {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.1);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(10px);
 }
 
 .download .btn-primary {
