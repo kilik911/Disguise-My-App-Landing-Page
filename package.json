@@ -1,0 +1,26 @@
+{
+  "name": "disguise-my-app-landing",
+  "version": "1.0.0",
+  "description": "Landing page for Disguise My App - Privacy for your screen sharing",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx live-server",
+    "serve": "npx http-server",
+    "deploy:surge": "npx surge . disguise-my-app.surge.sh"
+  },
+  "keywords": [
+    "macos",
+    "privacy",
+    "screen-sharing",
+    "icon-changer",
+    "app-disguise"
+  ],
+  "author": "Disguise My App Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/disguise-my-app-landing.git"
+  },
+  "homepage": "https://yourusername.github.io/disguise-my-app-landing",
+  "devDependencies": {}
+}
