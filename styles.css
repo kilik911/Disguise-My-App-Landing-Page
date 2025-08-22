@@ -6,14 +6,12 @@
 }
 
 :root {
-    --primary-color: #4ECDC4;
-    --primary-hover: #3CB8B2;
-    --secondary-color: #2C8A7A;
-    --accent-color: #5DD6CB;
-    --professional-blue: #1E5A54;
-    --professional-gray: #34495E;
-    --brand-teal: #4ECDC4;
-    --brand-dark-teal: #2C8A7A;
+    --primary-color: #007AFF;
+    --primary-hover: #0056CC;
+    --secondary-color: #5856D6;
+    --accent-color: #FF3B30;
+    --professional-blue: #1B365C;
+    --professional-gray: #2C3E50;
     --accent-color: #FF3B30;
     --text-primary: #1D1D1F;
     --text-secondary: #6E6E73;
@@ -103,7 +101,7 @@ body {
 }
 
 .nav-link:hover {
-    color: var(--brand-teal);
+    color: var(--primary-color);
     background: var(--background-secondary);
 }
 
@@ -177,16 +175,16 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--brand-teal), var(--brand-dark-teal));
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
-    box-shadow: 0 4px 20px rgba(78, 205, 196, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 122, 255, 0.3);
     position: relative;
     overflow: hidden;
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, var(--primary-hover), var(--professional-blue));
-    box-shadow: 0 6px 25px rgba(78, 205, 196, 0.4);
+    background: linear-gradient(135deg, var(--primary-hover), #4A47A3);
+    box-shadow: 0 6px 25px rgba(0, 122, 255, 0.4);
     transform: translateY(-3px) scale(1.02);
 }
 
@@ -197,8 +195,8 @@ body {
 }
 
 .btn-secondary:hover {
-    border-color: var(--brand-teal);
-    color: var(--brand-teal);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
     transform: translateY(-2px);
 }
 
@@ -293,11 +291,26 @@ body {
     color: var(--text-primary);
 }
 
+.app-grid .work-real {
+    background: linear-gradient(135deg, #FFFFFF, #F5F5F7);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.disguise-icon {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
 .arrow {
     font-size: 32px;
-    color: var(--brand-teal);
+    color: var(--primary-color);
     font-weight: bold;
-    background: rgba(78, 205, 196, 0.15);
+    background: rgba(0, 122, 255, 0.15);
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -305,7 +318,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: var(--spacing-sm) 0;
-    border: 2px solid rgba(78, 205, 196, 0.2);
+    border: 2px solid rgba(0, 122, 255, 0.2);
 }
 
 .demo-section p {
@@ -443,7 +456,7 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--brand-teal), var(--brand-dark-teal));
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
     display: flex;
     align-items: center;
@@ -451,7 +464,7 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: var(--spacing-md);
-    box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 122, 255, 0.3);
 }
 
 .step h3 {
@@ -495,7 +508,7 @@ body {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--brand-teal), var(--brand-dark-teal));
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
     display: flex;
     align-items: center;
@@ -504,7 +517,7 @@ body {
     font-weight: bold;
     flex-shrink: 0;
     margin-top: 2px;
-    box-shadow: 0 2px 8px rgba(78, 205, 196, 0.25);
+    box-shadow: 0 2px 8px rgba(0, 122, 255, 0.25);
 }
 
 .feature-item h4 {
@@ -520,7 +533,7 @@ body {
 /* Download Section */
 .download {
     padding: var(--spacing-xl) 0;
-    background: linear-gradient(135deg, var(--brand-teal), var(--brand-dark-teal));
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
     text-align: center;
 }
@@ -562,7 +575,7 @@ body {
 
 .download .btn-primary {
     background: white;
-    color: var(--brand-teal);
+    color: var(--primary-color);
     box-shadow: var(--shadow-medium);
 }
 
@@ -819,7 +832,7 @@ html {
 .btn:focus,
 .nav-link:focus,
 .footer-link:focus {
-    outline: 2px solid var(--brand-teal);
+    outline: 2px solid var(--primary-color);
     outline-offset: 2px;
 }
 
@@ -831,7 +844,7 @@ html {
 }
 
 .hero-title .gradient-text {
-    background: linear-gradient(135deg, var(--brand-teal), var(--brand-dark-teal));
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
