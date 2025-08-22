@@ -6,11 +6,14 @@
 }
 
 :root {
-    --primary-color: #007AFF;
-    --primary-hover: #0056CC;
-    --secondary-color: #5856D6;
-    --professional-blue: #1B365C;
-    --professional-gray: #2C3E50;
+    --primary-color: #4ECDC4;
+    --primary-hover: #3CB8B2;
+    --secondary-color: #2C8A7A;
+    --accent-color: #5DD6CB;
+    --professional-blue: #1E5A54;
+    --professional-gray: #34495E;
+    --brand-teal: #4ECDC4;
+    --brand-dark-teal: #2C8A7A;
     --accent-color: #FF3B30;
     --text-primary: #1D1D1F;
     --text-secondary: #6E6E73;
@@ -76,10 +79,9 @@ body {
 }
 
 .brand-icon {
-    width: 36px;
-    height: 36px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
 }
 
 .app-icon {
@@ -101,7 +103,7 @@ body {
 }
 
 .nav-link:hover {
-    color: var(--primary-color);
+    color: var(--brand-teal);
     background: var(--background-secondary);
 }
 
@@ -175,16 +177,16 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, var(--brand-teal), var(--brand-dark-teal));
     color: white;
-    box-shadow: 0 4px 20px rgba(0, 122, 255, 0.3);
+    box-shadow: 0 4px 20px rgba(78, 205, 196, 0.3);
     position: relative;
     overflow: hidden;
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, var(--primary-hover), #4A47A3);
-    box-shadow: 0 6px 25px rgba(0, 122, 255, 0.4);
+    background: linear-gradient(135deg, var(--primary-hover), var(--professional-blue));
+    box-shadow: 0 6px 25px rgba(78, 205, 196, 0.4);
     transform: translateY(-3px) scale(1.02);
 }
 
@@ -195,8 +197,8 @@ body {
 }
 
 .btn-secondary:hover {
-    border-color: var(--primary-color);
-    color: var(--primary-color);
+    border-color: var(--brand-teal);
+    color: var(--brand-teal);
     transform: translateY(-2px);
 }
 
@@ -293,9 +295,9 @@ body {
 
 .arrow {
     font-size: 32px;
-    color: var(--primary-color);
+    color: var(--brand-teal);
     font-weight: bold;
-    background: rgba(0, 122, 255, 0.1);
+    background: rgba(78, 205, 196, 0.15);
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -303,6 +305,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: var(--spacing-sm) 0;
+    border: 2px solid rgba(78, 205, 196, 0.2);
 }
 
 .demo-section p {
@@ -414,14 +417,11 @@ body {
     width: 800px;
     height: auto;
     border-radius: var(--border-radius-large);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15), 0 8px 25px rgba(0, 0, 0, 0.1);
-    border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .app-screenshot:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2), 0 12px 35px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
 }
 
 .steps {
@@ -443,7 +443,7 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: var(--primary-color);
+    background: linear-gradient(135deg, var(--brand-teal), var(--brand-dark-teal));
     color: white;
     display: flex;
     align-items: center;
@@ -451,7 +451,7 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: var(--spacing-md);
-    box-shadow: var(--shadow-light);
+    box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3);
 }
 
 .step h3 {
@@ -495,7 +495,7 @@ body {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background: var(--primary-color);
+    background: linear-gradient(135deg, var(--brand-teal), var(--brand-dark-teal));
     color: white;
     display: flex;
     align-items: center;
@@ -504,6 +504,7 @@ body {
     font-weight: bold;
     flex-shrink: 0;
     margin-top: 2px;
+    box-shadow: 0 2px 8px rgba(78, 205, 196, 0.25);
 }
 
 .feature-item h4 {
@@ -519,7 +520,7 @@ body {
 /* Download Section */
 .download {
     padding: var(--spacing-xl) 0;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, var(--brand-teal), var(--brand-dark-teal));
     color: white;
     text-align: center;
 }
@@ -561,7 +562,7 @@ body {
 
 .download .btn-primary {
     background: white;
-    color: var(--primary-color);
+    color: var(--brand-teal);
     box-shadow: var(--shadow-medium);
 }
 
@@ -639,10 +640,9 @@ body {
 }
 
 .footer-brand-icon {
-    width: 32px;
-    height: 32px;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
 }
 
 .footer-links {
@@ -800,11 +800,26 @@ html {
     scroll-behavior: smooth;
 }
 
+.disclaimer {
+    margin-top: var(--spacing-sm);
+    padding: var(--spacing-xs);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--border-radius);
+    border-left: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.disclaimer p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    font-style: italic;
+}
+
 /* Focus states for accessibility */
 .btn:focus,
 .nav-link:focus,
 .footer-link:focus {
-    outline: 2px solid var(--primary-color);
+    outline: 2px solid var(--brand-teal);
     outline-offset: 2px;
 }
 
@@ -816,7 +831,7 @@ html {
 }
 
 .hero-title .gradient-text {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, var(--brand-teal), var(--brand-dark-teal));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
