@@ -871,3 +871,12 @@ html {
         scroll-behavior: auto;
     }
 }
+
+
+/* Enhanced hover effects for demo icons */
+.app-grid .work-real:hover {
+    transform: scale(1.05);
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+    transition: all 0.2s ease;
+}
