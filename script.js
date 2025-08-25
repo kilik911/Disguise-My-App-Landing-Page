@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeSmoothScrolling();
     initializeAnimations();
     initializeDownloadButton();
+    initializeHeroDownloadButton();
 });
 
 // Header scroll effect
@@ -98,6 +99,32 @@ function initializeDownloadButton() {
             showPurchaseMessage();
         }, 2000);
     });
+}
+
+// Initialize hero download button
+function initializeHeroDownloadButton() {
+    const heroDownloadBtn = document.getElementById('hero-download-btn');
+    
+    if (heroDownloadBtn) {
+        heroDownloadBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            // Add a loading state
+            const originalText = heroDownloadBtn.innerHTML;
+            heroDownloadBtn.innerHTML = '<span class="download-icon">⏳</span> Preparing Download...';
+            heroDownloadBtn.style.pointerEvents = 'none';
+            
+            // Simulate download preparation (replace with actual download logic)
+            setTimeout(() => {
+                // Reset button state
+                heroDownloadBtn.innerHTML = originalText;
+                heroDownloadBtn.style.pointerEvents = 'auto';
+                
+                // Show purchase message
+                showPurchaseMessage();
+            }, 2000);
+        });
+    }
 }
 
 // Show purchase message
