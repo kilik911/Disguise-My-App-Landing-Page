@@ -292,17 +292,18 @@ body {
 }
 
 .app-grid .work-real {
-    background: linear-gradient(135deg, #FFFFFF, #F5F5F7);
-    border: 1px solid var(--border-color);
+    background: linear-gradient(135deg, #FFFFFF, #FAFAFA);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px;
+    padding: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .disguise-icon {
-    width: 44px;
-    height: 44px;
+    width: 72px;
+    height: 72px;
     object-fit: contain;
 }
 
@@ -692,7 +693,11 @@ body {
     }
 
     .hero {
-        padding: calc(120px + var(--spacing-md)) 0 var(--spacing-lg) 0;
+        padding: calc(140px + var(--spacing-md)) 0 var(--spacing-lg) 0;
+    }
+
+    .hero-title {
+        margin-top: var(--spacing-md);
     }
 
     .hero-content {
