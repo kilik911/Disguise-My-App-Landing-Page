@@ -1,5 +1,21 @@
 // Disguise My App Landing Page JavaScript
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Load Header
+    fetch('/_header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-placeholder').innerHTML = data;
+        });
+
+    // Load Footer
+    fetch('/_footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     initializeHeader();
     initializeSmoothScrolling();
