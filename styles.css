@@ -1004,3 +1004,36 @@ html {
     color: var(--background);
     background-size: 100% 100%;
 }
+
+.guide-content .article-body h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--professional-blue);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.3;
+}
+
+.guide-content .article-body h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.guide-content .article-body ul,
+.guide-content .article-body ol {
+    padding-left: 40px; /* Indent lists */
+    margin-bottom: var(--spacing-md);
+}
+
+.guide-content .article-body li {
+    margin-bottom: var(--spacing-sm);
+    padding-left: var(--spacing-xs);
+    line-height: 1.7;
+}
+
+.guide-content .article-body .btn-primary {
+    margin-top: var(--spacing-sm);
+    display: inline-block;
+}
