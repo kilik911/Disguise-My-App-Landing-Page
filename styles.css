@@ -1037,3 +1037,14 @@ html {
     margin-top: var(--spacing-sm);
     display: inline-block;
 }
+
+.next-guide {
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--border-color);
+}
+
+.next-guide p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
