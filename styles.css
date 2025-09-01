@@ -1070,18 +1070,22 @@ html {
     border-radius: 4px;
 }
 
-.hero-guides-link {
-    margin-top: var(--spacing-md);
-    font-size: 0.9rem;
-    color: var(--text-secondary);
+.download-guides-link {
+    margin-top: var(--spacing-lg);
+    font-size: 0.875rem; /* Made smaller */
+    color: rgba(255, 255, 255, 0.6); /* Made more subtle */
+    text-align: center;
 }
 
-.hero-guides-link a {
-    color: var(--primary-color);
+.download-guides-link a {
+    color: rgba(255, 255, 255, 0.8); /* Adjusted for contrast */
     text-decoration: none;
     font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Made underline more subtle */
+    transition: all 0.2s ease;
 }
 
-.hero-guides-link a:hover {
-    text-decoration: underline;
+.download-guides-link a:hover {
+    color: white;
+    border-bottom-color: rgba(255, 255, 255, 0.7);
 }
