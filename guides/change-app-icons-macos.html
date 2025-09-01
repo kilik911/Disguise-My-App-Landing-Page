@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Change App Icons on macOS Sequoia - Disguise My App</title>
+    <title>Change Mac App Icons on macOS Sequoia (and Revert)</title>
+    <meta name="description" content="Learn the built-in way to change or reset app icons on macOS Sequoia—plus when System Integrity Protection blocks changes—and a 10-second option with Disguise My App.">
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -12,12 +13,36 @@
     <main>
         <section class="guide-content">
             <div class="guide-header">
-                <h1>How to change app icons on macOS Sequoia (and how to undo it)</h1>
+                <h1>How to change app icons on macOS Sequoia (and undo it)</h1>
                 <p class="guide-meta">macOS Customization</p>
             </div>
             <div class="article-body">
-                <p><em>Placeholder content for the article on changing app icons on macOS Sequoia.</em></p>
-                <p>This guide will walk you through the steps to change any app icon on macOS, and how to easily revert back to the original icon. For a one-click solution, <a href="https://andyfeng911.gumroad.com/l/disguisemyapp">Download Disguise My App</a>.</p>
+                <h3>Steps (built-in, the trustworthy way)</h3>
+                <ol>
+                    <li>In Finder, go to <strong>Applications</strong> and <strong>Right-click → Get Info</strong> on the app.</li>
+                    <li>Open your replacement image (PNG/ICNS) in <strong>Preview</strong>, press <strong>⌘A</strong> then <strong>⌘C</strong> to copy.</li>
+                    <li>In the app’s <strong>Get Info</strong> panel, click the <strong>tiny icon</strong> at the top-left so it’s highlighted, then press <strong>⌘V</strong> to paste.</li>
+                </ol>
+
+                <h4>Undo / reset the icon</h4>
+                <ul>
+                    <li>Select the tiny top-left icon in <strong>Get Info</strong>, press <strong>Delete</strong> to remove the custom icon. If the Dock shows the old icon, you may need to rebuild the icon cache.</li>
+                </ul>
+
+                <h4>Limits you should know</h4>
+                <ul>
+                    <li>Apple’s <strong>System Integrity Protection (SIP)</strong> can block changes to some <strong>built-in system apps</strong>. Disabling SIP is not recommended for most users.</li>
+                </ul>
+
+                <h3>Faster with Disguise My App</h3>
+                <p>Swap icons in one click with a tool designed for safety and convenience. It's the perfect way to get reversible icons for clean, professional screen-shares.</p>
+                <a href="https://andyfeng911.gumroad.com/l/disguisemyapp?wanted=true" class="btn btn-primary" target="_blank">Download Disguise My App</a>
+
+                <h3>FAQ seeds</h3>
+                <ul>
+                    <li><strong>Will an update overwrite my custom icon?</strong> Some apps replace icons on update; you may need to repeat the steps or re-apply with Disguise My App.</li>
+                    <li><strong>What size works best?</strong> A 1024×1024 PNG or ICNS file will look crisp in the Dock and Launchpad.</li>
+                </ul>
             </div>
         </section>
     </main>
