@@ -890,7 +890,7 @@ html {
 
 /* Guides Page */
 .guides-gallery {
-    padding: var(--spacing-xl) 0;
+    padding: calc(80px + var(--spacing-xl)) 0 var(--spacing-xl) 0;
     background: var(--background-secondary);
 }
 
@@ -959,7 +959,7 @@ html {
 .guide-content {
     max-width: 800px;
     margin: 0 auto;
-    padding: var(--spacing-xl) var(--spacing-md);
+    padding: calc(80px + var(--spacing-xl)) var(--spacing-md) var(--spacing-xl);
 }
 
 .guide-content .guide-header {
