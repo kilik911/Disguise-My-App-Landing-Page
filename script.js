@@ -117,32 +117,41 @@ window.addEventListener('scroll', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const shareButton = document.getElementById('share-button');
-    const sharePopup = document.getElementById('share-popup');
-    const copyLinkButton = document.getElementById('copy-link-button');
+    const shareContainers = document.querySelectorAll('.share-container');
 
-    if (shareButton && sharePopup) {
-        shareButton.addEventListener('click', (event) => {
-            event.stopPropagation();
-            sharePopup.classList.toggle('show');
-        });
+    shareContainers.forEach(container => {
+        const shareButton = container.querySelector('#share-button');
+        const sharePopup = container.querySelector('#share-popup');
+        const copyLinkButton = container.querySelector('#copy-link-button');
 
-        document.addEventListener('click', (event) => {
-            if (!sharePopup.contains(event.target) && !shareButton.contains(event.target)) {
-                sharePopup.classList.remove('show');
+        if (shareButton && sharePopup) {
+            shareButton.addEventListener('click', (event) => {
+                event.stopPropagation();
+                sharePopup.classList.toggle('show');
+            });
+        }
+
+        if (copyLinkButton) {
+            copyLinkButton.addEventListener('click', () => {
+                const url = window.location.href;
+                navigator.clipboard.writeText(url).then(() => {
+                    alert('Link copied to clipboard!');
+                    if (sharePopup) {
+                        sharePopup.classList.remove('show');
+                    }
+                }).catch(err => {
+                    console.error('Failed to copy text: ', err);
+                });
+            });
+        }
+    });
+
+    document.addEventListener('click', (event) => {
+        const popups = document.querySelectorAll('.share-popup');
+        popups.forEach(popup => {
+            if (!popup.parentElement.contains(event.target)) {
+                popup.classList.remove('show');
             }
         });
-    }
-
-    if (copyLinkButton) {
-        copyLinkButton.addEventListener('click', () => {
-            const url = 'https://disguisemyapp.com/';
-            navigator.clipboard.writeText(url).then(() => {
-                alert('Link copied to clipboard!');
-                sharePopup.classList.remove('show');
-            }).catch(err => {
-                console.error('Failed to copy text: ', err);
-            });
-        });
-    }
+    });
 });
