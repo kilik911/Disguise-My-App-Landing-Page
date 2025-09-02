@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://disguisemyapp.com/</loc></url>
-  <url><loc>https://disguisemyapp.com/guides/</loc></url>
-  <url><loc>https://disguisemyapp.com/guides/change-app-icons-macos.html</loc></url>
-  <url><loc>https://disguisemyapp.com/guides/hide-apps-screenshare.html</loc></url>
-  <url><loc>https://disguisemyapp.com/guides/professional-dock.html</loc></url>
-  <url><loc>https://disguisemyapp.com/guides/privacy-checklist-presenting.html</loc></url>
+  <url>
+    <loc>https://disguisemyapp.com/</loc>
+    <lastmod>2024-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://disguisemyapp.com/guides/</loc>
+    <lastmod>2024-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://disguisemyapp.com/guides/change-app-icons-macos.html</loc>
+    <lastmod>2024-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://disguisemyapp.com/guides/hide-apps-screenshare.html</loc>
+    <lastmod>2024-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://disguisemyapp.com/guides/professional-dock.html</loc>
+    <lastmod>2024-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://disguisemyapp.com/guides/privacy-checklist-presenting.html</loc>
+    <lastmod>2024-10-26</lastmod>
+  </url>
 </urlset>
