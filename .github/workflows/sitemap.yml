@@ -1,0 +1,17 @@
+# .github/workflows/sitemap.yml
+name: Generate sitemap
+on: { push: { branches: [ main, SEO-improvement-and-page-optimizations ] }, workflow_dispatch: {} }
+jobs:
+  sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cicirello/generate-sitemap@v3
+        with:
+          base-url: https://disguisemyapp.com
+          lastmod: true
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml && git commit -m "Update sitemap" || true
+          git push
