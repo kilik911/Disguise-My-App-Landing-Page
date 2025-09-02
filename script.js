@@ -120,8 +120,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const shareContainers = document.querySelectorAll('.share-container');
 
     shareContainers.forEach(container => {
-        const shareButton = container.querySelector('#share-button');
-        const sharePopup = container.querySelector('#share-popup');
+        const shareButton = container.querySelector('.share-button');
+        const sharePopup = container.querySelector('.share-popup');
         const copyLinkButton = container.querySelector('#copy-link-button');
 
         if (shareButton && sharePopup) {

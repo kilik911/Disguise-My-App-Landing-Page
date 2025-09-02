@@ -226,11 +226,19 @@ body {
     display: flex;
 }
 
-#share-button {
+.share-button {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.hero-buttons .share-button {
     width: 100%;
+    justify-content: center;
+}
+
+.guide-share {
+    justify-content: center;
 }
 
 .share-popup {
