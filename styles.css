@@ -160,6 +160,7 @@ body {
     display: flex;
     gap: var(--spacing-sm);
     margin-bottom: var(--spacing-md);
+    align-items: stretch;
 }
 
 .btn {
@@ -217,6 +218,65 @@ body {
     color: var(--text-secondary);
     font-size: 14px;
     font-weight: 500;
+}
+
+/* Share Button */
+.share-container {
+    position: relative;
+    display: flex;
+}
+
+#share-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.share-popup {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-medium);
+    padding: var(--spacing-xs);
+    display: flex;
+    gap: var(--spacing-xs);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+    z-index: 10;
+    transform-origin: bottom center;
+}
+
+.share-popup.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-5px);
+}
+
+.share-popup a,
+.share-popup button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--background-secondary);
+    color: var(--text-secondary);
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.share-popup a:hover,
+.share-popup button:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: scale(1.1);
 }
 
 /* Hero Visual */

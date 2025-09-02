@@ -115,3 +115,34 @@ window.addEventListener('scroll', () => {
         heroVisual.style.transform = `translateY(${scrolled * 0.2}px)`;
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const shareButton = document.getElementById('share-button');
+    const sharePopup = document.getElementById('share-popup');
+    const copyLinkButton = document.getElementById('copy-link-button');
+
+    if (shareButton && sharePopup) {
+        shareButton.addEventListener('click', (event) => {
+            event.stopPropagation();
+            sharePopup.classList.toggle('show');
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!sharePopup.contains(event.target) && !shareButton.contains(event.target)) {
+                sharePopup.classList.remove('show');
+            }
+        });
+    }
+
+    if (copyLinkButton) {
+        copyLinkButton.addEventListener('click', () => {
+            const url = 'https://disguisemyapp.com/';
+            navigator.clipboard.writeText(url).then(() => {
+                alert('Link copied to clipboard!');
+                sharePopup.classList.remove('show');
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        });
+    }
+});
