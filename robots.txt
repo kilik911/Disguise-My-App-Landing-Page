@@ -5,4 +5,4 @@ Allow: /
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://kilik911.github.io/Disguise-My-App-Landing-Page/sitemap.xml
+Sitemap: https://disguisemyapp.com/sitemap.xml
