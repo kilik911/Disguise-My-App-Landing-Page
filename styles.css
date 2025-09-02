@@ -673,11 +673,20 @@ body {
     transition: all 0.2s ease;
     padding: var(--spacing-xs);
     border-radius: var(--border-radius);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .footer-link:hover {
     color: white;
     background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
 }
 
 .footer-text {
@@ -1070,9 +1079,9 @@ html {
     border-radius: 4px;
 }
 
-.download-guides-link {
+.download .download-guides-link {
     margin-top: var(--spacing-lg);
-    font-size: 0.875rem; /* Made smaller */
+    font-size: 12px; /* Made very small */
     color: rgba(255, 255, 255, 0.6); /* Made more subtle */
     text-align: center;
 }
