@@ -535,7 +535,8 @@ body {
 
 /* Download Section */
 .download {
-    padding: var(--spacing-xl) 0;
+    /* To adjust the space above the footer, change the bottom padding value here (e.g., 24px) */
+    padding: var(--spacing-xl) 0 24px 0;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
     text-align: center;
@@ -643,7 +644,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-xs);
     text-align: center;
 }
 
